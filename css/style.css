@@ -1,0 +1,212 @@
+/* ------ */
+/* header style */
+
+header {
+  background-color: var(--bg-blue-primary);
+  height: 100vh;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+header .container nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style-type: none;
+}
+
+header .switch-language-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1.2rem 2.5rem;
+  text-decoration: none;
+}
+
+.siapa-kami {
+  background-color: var(--bg-white);
+  color: var(--bg-blue-primary);
+  padding: 5rem 1.5rem;
+}
+
+.siapa-kami h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--bg-blue-primary);
+}
+
+.siapa-kami p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Portfolio Section */
+.portfolio {
+  background-color: var(--bg-blue-primary);
+  padding: 5rem 1.5rem;
+  color: var(--bg-white);
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--bg-white);
+}
+
+.portfolio-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio .card {
+  background-color: var(--bg-white);
+  color: var(--bg-blue-primary);
+  width: 800px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio .card img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio .card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: center;
+}
+
+.portfolio a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--bg-blue-primary);
+  background-color: var(--bg-white);
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio a:hover {
+  background-color: var(--bg-blue-primary);
+  color: var(--bg-white);
+}
+
+/* Galeri Section */
+.galeri {
+  background-color: var(--bg-white);
+  padding: 5rem 1.5rem;
+  text-align: center;
+  color: var(--bg-blue-primary);
+}
+
+.galeri h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--bg-blue-primary);
+}
+
+.galeri-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.galeri .card {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeri .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.galeri .card img {
+  width: 100%;
+  height: auto;
+}
+
+.galeri a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--bg-white);
+  background-color: var(--bg-blue-primary);
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.galeri a:hover {
+  background-color: #142646;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: var(--bg-blue-primary);
+}
