@@ -1,64 +1,6 @@
 /* ------ */
 /* header style */
 
-header {
-  background-color: var(--bg-blue-primary);
-  height: 100vh;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #fff;
-}
-
-header .logo {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-header .container nav {
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  list-style-type: none;
-}
-
-header .switch-language-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.hero {
-  height: 90vh;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero h1 {
-  color: #fff;
-  font-size: 3.5rem;
-}
-
-.hero a {
-  display: inline-block;
-  margin-top: 1rem;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 1.2rem 2.5rem;
-  text-decoration: none;
-}
-
 .siapa-kami {
   background-color: var(--bg-white);
   color: var(--bg-blue-primary);

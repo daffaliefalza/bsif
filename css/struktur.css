@@ -1,0 +1,34 @@
+body {
+  height: 1000px;
+}
+
+header {
+  background-color: var(--bg-blue-primary);
+  height: 50vh !important;
+}
+
+.banner {
+  height: 30vh !important;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.struktur-wrapper {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  max-width: 750px;
+  margin-inline: auto;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  right: 0;
+}
+
+.struktur-wrapper img {
+  width: 100%;
+}
