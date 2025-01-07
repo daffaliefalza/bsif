@@ -36,7 +36,7 @@ img {
   width: 95%;
 }
 
-header {
+.header {
   background-color: var(--bg-blue-primary);
   height: 100vh;
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/general.css" />
 
     <style>
-      header {
+      .header {
         background-color: var(--bg-blue-primary);
         height: 50vh !important;
       }
@@ -21,10 +21,59 @@
         align-items: center;
         justify-content: center;
       }
+
+      /* Main Section Styles */
+      main {
+        padding: 3rem 0;
+        background-color: white;
+      }
+
+      main .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .latar-belakang article {
+        margin-bottom: 3rem;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .latar-belakang header h2 {
+        font-size: 1.8rem;
+        color: #1e3a8a;
+        margin-bottom: 15px;
+      }
+
+      .latar-belakang p,
+      .latar-belakang ul {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .latar-belakang ul {
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+      .latar-belakang ul li {
+        margin-bottom: 10px;
+      }
+
+      .latar-belakang img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 15px;
+      }
     </style>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <nav>
           <a href="#" class="logo">BSIF.</a>
@@ -34,7 +83,7 @@
               <a href="#">
                 Tentang Kami
                 <img
-                  src="down.png"
+                  src="images/down.png"
                   style="
                     width: 15px;
                     filter: invert(99%) sepia(3%) saturate(182%)
@@ -54,7 +103,7 @@
               <a href="#">
                 Proyek
                 <img
-                  src="down.png"
+                  src="images/down.png"
                   style="
                     width: 15px;
                     filter: invert(99%) sepia(3%) saturate(182%)
@@ -96,112 +145,113 @@
       </div>
     </header>
 
-    <section class="latar-belakang">
-      <div class="container">
-        <h2>1. BANJIR CEKUNGAN BANDUNG</h2>
-        <p>
-          Banjir di wilayah Cekungan Bandung sudah terjadi sejak awal abad
-          ke-19, mulai dari Kecamatan Rancaekek, Majalaya, Baleendah,
-          Dayeuhkolot, Bojongsoang hingga Kecamatan Banjaran. Curah hujan yang
-          cukup tinggi membuat sungai Citarum meluap dan membanjiri kawasan
-          tersebut. Tercatat kronologis banjir di Kawasan Bandung Selatan
-          terjadi pada tahun1931, 1983, 1984, 1985, 1986, 1992, 1993, 2002,
-          hingga saat ini banjir terus melanda setiap tahunnya.
-        </p>
+    <main>
+      <section class="latar-belakang">
+        <div class="container">
+          <article>
+            <header>
+              <h2>1. BANJIR CEKUNGAN BANDUNG</h2>
+            </header>
+            <p>
+              Banjir di wilayah Cekungan Bandung sudah terjadi sejak awal abad
+              ke-19, mulai dari Kecamatan Rancaekek, Majalaya, Baleendah,
+              Dayeuhkolot, Bojongsoang hingga Kecamatan Banjaran. Curah hujan
+              yang cukup tinggi membuat sungai Citarum meluap dan membanjiri
+              kawasan tersebut. Tercatat kronologis banjir di Kawasan Bandung
+              Selatan terjadi pada tahun1931, 1983, 1984, 1985, 1986, 1992,
+              1993, 2002, hingga saat ini banjir terus melanda setiap tahunnya.
+            </p>
+          </article>
 
-        <h2>2. PETA KEJADIAN BANJIR & KAWASAN RAWAN BANJIR</h2>
-        <img src="images/luasan-banjir.png" alt="" />
+          <article>
+            <header>
+              <h2>2. PETA KEJADIAN BANJIR & KAWASAN RAWAN BANJIR</h2>
+            </header>
+            <img src="images/luasan-banjir.png" alt="Peta kejadian banjir" />
+          </article>
 
-        <h2>3. Besaran Banjir</h2>
-        <img src="images/luasan-genangan.png" alt="" />
+          <article>
+            <header>
+              <h2>3. Besaran Banjir</h2>
+            </header>
+            <img src="images/luasan-genangan.png" alt="Peta besaran banjir" />
+          </article>
 
-        <h2>4. Proyek Pengendalian Banjir Das Citarum Hulu</h2>
-        <p>
-          Kementerian PUPR di tahun 2016-2020 telah melaksanakan proyek
-          Pengendalian Banjir DAS Citarum Hulu yang meliputi:
-        </p>
-        <ul>
-          <li>Check dam</li>
-          <li>Embung Gedebage</li>
+          <article>
+            <header>
+              <h2>4. Proyek Pengendalian Banjir Das Citarum Hulu</h2>
+            </header>
+            <p>
+              Kementerian PUPR di tahun 2016-2020 telah melaksanakan proyek
+              Pengendalian Banjir DAS Citarum Hulu yang meliputi:
+            </p>
+            <ul>
+              <li>Check dam</li>
+              <li>Embung Gedebage</li>
+              <li>Kolam Retensi Cieunteung</li>
+              <li>Terowongan Nanjung</li>
+              <li>Floodway Cisangkuy</li>
+              <li>Polder Andir (tahap konstruksi)</li>
+            </ul>
+            <img
+              src="images/proyek-pengendalian.png"
+              alt="Proyek pengendalian banjir"
+            />
+          </article>
 
-          <li>Kolam Retensi Cieunteung</li>
+          <article>
+            <header>
+              <h2>5. Pengaruh perubahan Iklim terhadap Basis Desain</h2>
+            </header>
+            <p>
+              Perubahan iklim akibat pemanasan global berpengaruh pada pola
+              curah hujan sehingga mengakibatkan pergeseran puncak banjir, di
+              samping itu pengembangan kawasan yang mengubah tata guna lahan
+              juga berdampak atas besaran rencana...
+            </p>
+            <p>
+              Perubahan ini berakibat masih timbulnya banjir belakangan ini
+              meskipun upaya struktural di atas telah dilakukan...
+            </p>
+          </article>
 
-          <li>Terowongan Nanjung</li>
-
-          <li></li>
-
-          <li>Floodway Cisangkuy</li>
-
-          <li>Polder Andir (tahap konstruksi)</li>
-        </ul>
-        <img src="images/proyek-pengendalian.png" alt="" />
-
-        <h2>5. Pengaruh perubahan Iklim terhadap Basis Desain</h2>
-        <p>
-          Perubahan iklim akibat pemanasan global berpengaruh pada pola curah
-          hujan sehingga mengakibatkan pergeseran puncak banjir, di samping itu
-          pengembangan kawasan yang mengubah tata guna lahan juga berdampak atas
-          besaran rencana. Beberapa kajian yang dilakukan untuk daerah daerah di
-          pulau Jawa menunjukkan pergeseran puncak banjir dari perioda ulang 25
-          tahunan menjadi 50 tahunan.
-        </p>
-
-        <p>
-          Perubahan ini berakibat masih timbulnya banjir belakangan ini meskipun
-          upaya struktural di atas telah dilakukan. Bahwasanya dasar perencanaan
-          (desain) infrastruktur pengendali banjir yang digunakan selama ini
-          berdasarkan (curah) hujan rencana dan debit banjir rencana dengan
-          perioda ulang 20 tahunan. Merujuk kondisi di atas, mendorong perlunya
-          ada solusi pelengkap / komplemen dari upaya struktural yang telah
-          dilakukan dan yang direncanakan dalam Rencana Pengelolaan Sumber Daya
-          Air Wilayah Sungai Citarum - untuk menanggulangi bencana banjir di
-          wilayah cekungan Bandung. Solusi ini perlu mempertimbangkan pengaruh
-          perubahan iklim terhadap besaran rencana - hujan rencana dan debit
-          banjir rencana, yaitu menggunakan besaran rencana perioda ulang 50
-          tahunan
-        </p>
-
-        <p>
-          Besaran rencana ini sejalan dengan kriteria dalam Peraturan Presiden
-          no. 2 tahun 2015 tentang Rencana Pembangunanan Jangka Menengah
-          Nasional 2015 – 2019 dalam hal kriteria desain pengendalian banjir,
-          sebagaimana dinyatakan dalam Buku I Lampiran Perpres tersebut, pada
-          butir Sasaran Ketahanan Air – Peningkatan Kapasitas Desain
-          Pengendalian Banjir yang semula 5 – 25 tahun menjadi 10 – 100 tahun
-        </p>
-
-        <img src="" alt="" />
-
-        <h2>6. Usulan Solusi</h2>
-        <p>
-          Usulan solusi Prasarana Pengendali Banjir Bandung Selatan yang digagas
-          bertujuan untuk melengkapi upaya struktural yang telah dilakukan
-          pemerintah dengan memperhitungkan pengaruh perubahan iklim di atas,
-          dan menggunakan kriteria perencanaan sebagaimana dituangkan dalam
-          RPJMN 2015-2019 Sasaran Ketahanan Air - Ketangguhan masyarakat dalam
-          mengurangi risiko daya rusak air. Studi yang telah dilakukan
-          menggunakan kriteria hujan rencana dan debit banjir rencana dengan
-          perioda ulang 50 tahunan, dengan usulan solusinya adalah membuat kolam
-          retensi dan kanal banjir berawal dari titik pertemuan sungai
-          Cikapundung dan Cisangkuy di sungai Citarum (sekitar Andir, Kabupaten
-          Bandung) dan berakhir di sungai Ciwidey - menunjukkan adanya reduksi
-          yang signifikan terhadap luasan genangan banjir. Dengan infrastruktur
-          ini daerah seluas 2,410 HA yang semula banjir, dapat direduksi menjadi
-          hanya 590 HA saja. Reduksi ini terbesar terjadi di daerah Baleendah,
-          Dayeuhkolot dan Bojongsoang. Daerah Baleendah, Dayeuhkolot dan
-          Bojongsoang merupakan daerah yang termasuk dalam kawasan Cekungan
-          bandung. Wilayah Cekungan Bandung sangat strategis dan memiliki nilai
-          ekonomis yang tinggi, dan ini ditunjukkan dengan terbitnya Perpres 45
-          tahun 2018 tentang Rencana Tata Ruang Kawasan Perkotaan Cekungan
-          Bandung , yang bertujuan untuk mewujudkan kawasan perkotaan yang
-          berkelas dunia sebagai pusat kebudayaan, pariwisata, serta kegiatan
-          jasa dan ekonomi kreatif nasional, yang berbasis pendidikan tinggi dan
-          industri berteknologi tinggi yang berdaya saing dan ramah lingkungan.
-          Dengan terbebaskannya Bandung Selatan dari banjir, daerah tersebut
-          dapat dikembangkan menjadi kawasan perkotaan sebagai bagian dari
-          Pengembangan Kawasan Perkotaan Cekungan Bandung.
-        </p>
-      </div>
-    </section>
+          <article>
+            <header>
+              <h2>6. Usulan Solusi</h2>
+            </header>
+            <p>
+              Usulan solusi Prasarana Pengendali Banjir Bandung Selatan yang
+              digagas bertujuan untuk melengkapi upaya struktural yang telah
+              dilakukan pemerintah dengan memperhitungkan pengaruh perubahan
+              iklim di atas, dan menggunakan kriteria perencanaan sebagaimana
+              dituangkan dalam RPJMN 2015-2019 Sasaran Ketahanan Air -
+              Ketangguhan masyarakat dalam mengurangi risiko daya rusak air.
+              Studi yang telah dilakukan menggunakan kriteria hujan rencana dan
+              debit banjir rencana dengan perioda ulang 50 tahunan, dengan
+              usulan solusinya adalah membuat kolam retensi dan kanal banjir
+              berawal dari titik pertemuan sungai Cikapundung dan Cisangkuy di
+              sungai Citarum (sekitar Andir, Kabupaten Bandung) dan berakhir di
+              sungai Ciwidey - menunjukkan adanya reduksi yang signifikan
+              terhadap luasan genangan banjir. Dengan infrastruktur ini daerah
+              seluas 2,410 HA yang semula banjir, dapat direduksi menjadi hanya
+              590 HA saja. Reduksi ini terbesar terjadi di daerah Baleendah,
+              Dayeuhkolot dan Bojongsoang. Daerah Baleendah, Dayeuhkolot dan
+              Bojongsoang merupakan daerah yang termasuk dalam kawasan Cekungan
+              bandung. Wilayah Cekungan Bandung sangat strategis dan memiliki
+              nilai ekonomis yang tinggi, dan ini ditunjukkan dengan terbitnya
+              Perpres 45 tahun 2018 tentang Rencana Tata Ruang Kawasan Perkotaan
+              Cekungan Bandung , yang bertujuan untuk mewujudkan kawasan
+              perkotaan yang berkelas dunia sebagai pusat kebudayaan,
+              pariwisata, serta kegiatan jasa dan ekonomi kreatif nasional, yang
+              berbasis pendidikan tinggi dan industri berteknologi tinggi yang
+              berdaya saing dan ramah lingkungan. Dengan terbebaskannya Bandung
+              Selatan dari banjir, daerah tersebut dapat dikembangkan menjadi
+              kawasan perkotaan sebagai bagian dari Pengembangan Kawasan
+              Perkotaan Cekungan Bandung.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
