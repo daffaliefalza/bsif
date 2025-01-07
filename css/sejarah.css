@@ -1,18 +1,3 @@
-header {
-  background-color: var(--bg-blue-primary);
-  height: 50vh !important;
-}
-
-.banner {
-  height: 30vh !important;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-}
-
 .sejarah {
   margin-top: 5rem;
   text-align: justify;
