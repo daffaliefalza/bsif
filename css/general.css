@@ -66,3 +66,17 @@ img {
 article p {
   margin: 10px 0;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.7rem !important;
+  }
+
+  p {
+    font-size: 1.2rem !important;
+  }
+}
