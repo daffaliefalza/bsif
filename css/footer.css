@@ -1,0 +1,90 @@
+/* General Footer Styling */
+.footer {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Small column, two equal larger columns */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* First Column (Small) */
+.footer-small h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-small p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* Second Column (Quick Links) */
+.footer-links h4 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f5f5f5;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00bcd4;
+}
+
+/* Third Column (Contact Info) */
+.footer-contact h4 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-contact p {
+  line-height: 1.6;
+  color: #bbb;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  margin-top: 20px;
+  color: #bbb;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* Stacks all columns vertically */
+  }
+
+  .footer-small,
+  .footer-links,
+  .footer-contact {
+    margin-bottom: 20px;
+  }
+}

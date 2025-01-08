@@ -5,24 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PBBS - Latar Belakang</title>
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
 
     <style>
-      .header {
-        background-color: var(--bg-blue-primary);
+      .hero {
         height: 50vh !important;
       }
-
-      .banner {
-        height: 30vh !important;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        color: #fff;
-        align-items: center;
-        justify-content: center;
-      }
-
       /* Main Section Styles */
+
       main {
         padding: 3rem 0;
         background-color: white;
@@ -73,77 +63,91 @@
     </style>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav>
-          <a href="#" class="logo">BSIF.</a>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#">
-                Tentang Kami
-                <img
-                  src="images/down.png"
-                  style="
-                    width: 15px;
-                    filter: invert(99%) sepia(3%) saturate(182%)
-                      hue-rotate(326deg) brightness(119%) contrast(100%);
-                  "
-                  alt=""
-                />
-              </a>
-              <ul class="dropdown">
-                <li><a href="sejarah.html">Sejarah</a></li>
-                <li>
-                  <a href="struktur-organisasi.html">Struktur Organisasi</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">
-                Proyek
-                <img
-                  src="images/down.png"
-                  style="
-                    width: 15px;
-                    filter: invert(99%) sepia(3%) saturate(182%)
-                      hue-rotate(326deg) brightness(119%) contrast(100%);
-                  "
-                  alt=""
-                />
-              </a>
-              <ul class="dropdown">
-                <li>
-                  <a href="#">PBBS</a>
-                  <ul class="dropdown">
-                    <li><a href="#">PBBS 1</a></li>
-                    <li><a href="#">PBBS 2</a></li>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="#">BSIF.</a></div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="desktop-item"
+              >Tentang Kami
+              <img
+                src="images/down.png"
+                style="
+                  width: 15px;
+                  filter: invert(99%) sepia(3%) saturate(182%)
+                    hue-rotate(326deg) brightness(119%) contrast(100%);
+                "
+                alt=""
+            /></a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+            <ul class="drop-menu">
+              <li><a href="sejarah.html">Sejarah</a></li>
+              <li style="line-height: 35px !important">
+                <a href="struktur-organisasi.html">Struktur Organisasi</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item"
+              >Proyek
+              <img
+                src="images/down.png"
+                style="
+                  width: 15px;
+                  filter: invert(99%) sepia(3%) saturate(182%)
+                    hue-rotate(326deg) brightness(119%) contrast(100%);
+                "
+                alt=""
+            /></a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu </label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <header>PPBPS</header>
+                  <ul class="mega-links">
+                    <li><a href="latar-belakang.html">Latar Belakang</a></li>
+                    <li>
+                      <a href="deskripsi-proyek.html">Deskripsi Proyek</a>
+                    </li>
+                    <li><a href="#">Profil Proyek</a></li>
+                    <li><a href="#">Land Value Capture</a></li>
                   </ul>
-                </li>
-                <li>
-                  <a href="#">ISTJ</a>
-                  <ul class="dropdown">
-                    <li><a href="#">ISJTJ 1</a></li>
-                    <li><a href="#">ISTJ 2</a></li>
+                </div>
+                <div class="row">
+                  <header>PPBPS</header>
+                  <ul class="mega-links">
+                    <li><a href="latar-belakang.html">Latar Belakang</a></li>
+                    <li><a href="#">Deskripsi Proyek</a></li>
+                    <li><a href="#">Profil Proyek</a></li>
+                    <li><a href="#">Land Value Capture</a></li>
                   </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#">Berita</a></li>
-            <li><a href="#">Galeri</a></li>
-            <li><a href="#">Kontak</a></li>
-          </ul>
-          <div class="switch-language-wrapper">
-            <button id="indonesia">IN</button>
-            <button id="english">EN</button>
-          </div>
-        </nav>
-
-        <div class="banner">
-          <h1>Latar Belakang PBBS</h1>
-        </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
       </div>
-    </header>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Latar Belakang</h1>
+      </div>
+    </section>
 
     <main>
       <section class="latar-belakang">
