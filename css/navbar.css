@@ -51,7 +51,7 @@ nav .wrapper {
 }
 .nav-links .drop-menu {
   position: absolute;
-  background: #1f3763;
+  background: #242526;
   width: 180px;
   line-height: 45px;
   top: 85px;
@@ -91,7 +91,7 @@ nav .wrapper {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 .mega-box .content .row {
-  width: calc(35% - 30px);
+  width: calc(55% - 30px);
   line-height: 45px;
 }
 .content .row img {
@@ -135,7 +135,7 @@ nav .wrapper {
 
 @media screen and (min-width: 971px) {
   .mega-box {
-    width: 70% !important;
+    width: 50% !important;
   }
 }
 
