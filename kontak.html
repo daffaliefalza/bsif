@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - PT Bandung Selatan Infrastructure</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <style>
+      /* Global Styles */
+      .hero {
+        height: 50vh !important;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #ccc;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .contact-section {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-section h2 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        color: #1a1a1a;
+      }
+
+      .contact-info,
+      .contact-form {
+        margin-bottom: 20px;
+      }
+
+      .contact-info p {
+        margin: 10px 0;
+        color: #555;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .contact-form button:hover {
+        background-color: #0056b3;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #1a1a1a;
+        color: #ccc;
+        margin-top: 20px;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="#">BSIF.</a></div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="desktop-item"
+              >Tentang Kami
+              <img
+                src="images/down.png"
+                style="
+                  width: 15px;
+                  filter: invert(99%) sepia(3%) saturate(182%)
+                    hue-rotate(326deg) brightness(119%) contrast(100%);
+                "
+                alt=""
+            /></a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+            <ul class="drop-menu">
+              <li><a href="sejarah.html">Sejarah</a></li>
+              <li style="line-height: 35px !important">
+                <a href="struktur-organisasi.html">Struktur Organisasi</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-item"
+              >Proyek
+              <img
+                src="images/down.png"
+                style="
+                  width: 15px;
+                  filter: invert(99%) sepia(3%) saturate(182%)
+                    hue-rotate(326deg) brightness(119%) contrast(100%);
+                "
+                alt=""
+            /></a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu </label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <header>PPBPS</header>
+                  <ul class="mega-links">
+                    <li><a href="latar-belakang.html">Latar Belakang</a></li>
+                    <li>
+                      <a href="deskripsi-proyek.html">Deskripsi Proyek</a>
+                    </li>
+                    <li><a href="#">Profil Proyek</a></li>
+                    <li><a href="#">Land Value Capture</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>PPBPS</header>
+                  <ul class="mega-links">
+                    <li><a href="latar-belakang.html">Latar Belakang</a></li>
+                    <li><a href="#">Deskripsi Proyek</a></li>
+                    <li><a href="#">Profil Proyek</a></li>
+                    <li><a href="#">Land Value Capture</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Kontak</h1>
+      </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+      <section class="contact-section">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h2>Informasi Kontak</h2>
+          <p>
+            <strong>Alamat:</strong> 123 Corporate Blvd, Bandung, Jawa Barat,
+            Indonesia
+          </p>
+          <p><strong>Telepon:</strong> +62 812 3456 7890</p>
+          <p><strong>Email:</strong> info@bsif.co.id</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Hubungi Kami</h2>
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Nama Anda" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Anda"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Pesan Anda"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <style>
+      h2 {
+        margin-top: 30px;
+        font-size: 22px;
+        color: #1a1a1a;
+        text-align: center;
+      }
+
+      .map-container {
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .map-container iframe {
+        width: 100%;
+        height: 350px;
+        border: 0;
+      }
+
+      @media (min-width: 768px) {
+        .map-container iframe {
+          height: 450px;
+        }
+      }
+    </style>
+
+    <h2>Temukan Kami</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506820.95693240716!2d107.26149678502004!3d-7.063356754553234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68eeb88c17d7b1%3A0x301e8f1fc28b8e0!2sKabupaten%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1736315255655!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 PT Bandung Selatan Infrastructure. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
